@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: docker-demo-pod
+  labels:
+    app: demoApp
+spec:
+  containers:
+    - name: docker-demo-container
+      image: ohmygodluke/docker-demo-app:latest
+      ports:
+      - containerPort: 3000
